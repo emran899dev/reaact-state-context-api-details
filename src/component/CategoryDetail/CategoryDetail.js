@@ -2,13 +2,13 @@ import React from 'react';
 import { useContext } from 'react';
 import { CategoryContext } from '../../App';
 
-const CategoryDetail = () => {
-     
-    const category = useContext(CategoryContext)
+
+const CategoryDetail = (props) => {
+const {name} = props.product
+
     return (
         <div>
-            <h4>This is Category Detail Page</h4>
-            <p>Selected Category: {category}</p>
+            <p>Selected  Detail Category: {name}</p>
         </div>
     );
 };
